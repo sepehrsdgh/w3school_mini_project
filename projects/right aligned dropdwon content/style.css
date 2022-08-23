@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    margin:10px 15px;
+}
+
+.left{
+    float:left;
+    background-color: rgb(4,170,109);
+    color:white;
+}
+
+.right{
+    float:right;
+    background-color: rgb(4,170,109);
+    color:white;
+}
+
+.left:hover{
+    background-color:rgb(5,152,98) ;
+}
+
+.right:hover{
+    background-color:rgb(5,152,98) ;
+}
+
+.left-button,.right-button{
+    display: inline-block;
+    padding:20px 20px;
+}
+
+/*.left-button:hover ~ .left-dropdown{
+    display:block
+}
+
+.right-button:hover ~ .right-dropdown{
+    display:block
+}*/
+
+.left:hover .left-dropdown{
+    display:block
+    
+}
+
+.right:hover .right-dropdown{
+    display:block
+
+}
+
+li{
+    display:block;
+}
+
+
+a:active{
+    color:white;
+}
+
+.right-button:visited,.left-button:visited{
+    color:white
+}
+
+
+ul{
+    display:none;
+    background-color: rgb(249,249,249);
+    color: black !important;
+    width: 150px;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+ul a:visited{
+    color: black;
+}
+
+ul li{
+    padding:10px 10px;
+}
+
+ul li:hover{
+    background-color: rgb(241,241,241);
+}
+
+.right ul{
+    right:15px;
+}
+
