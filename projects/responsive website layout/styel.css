@@ -1,0 +1,47 @@
+*{
+    padding: 0px 0px;
+    margin:0px 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+    padding: 15px 25px 15px 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 66vh 13.3vh;
+    row-gap: 10px;
+    
+}
+
+header{
+    background-color: green;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+}
+
+nav{
+    background-color:coral; 
+}
+
+main{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 22.7fr 6.0fr;
+    column-gap: 20px;
+}
+
+.main-section{
+    background-color:chocolate
+}
+
+aside{
+    background-color:brown;
+    margin-bottom: 15vh;
+    
+}
+
+footer{
+    background-color:blue
+}
