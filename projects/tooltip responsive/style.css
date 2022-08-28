@@ -1,0 +1,56 @@
+body{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+p{
+    display: inline-block;
+    color:blue;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px dotted black;
+}
+
+.example{
+    position: relative;
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    top: -20px;
+    margin-bottom: 30px;
+    left: +15px;
+    width: 100px;
+    padding: 5px 5px;
+    padding-left: 5px;
+    text-align: center;
+    background-color: red;
+    border-radius: 4px ;
+    text-align: center !important;
+    transition: display 8s ease-in-out;
+    z-index: 1;
+    
+
+}
+p:hover + .tooltip {
+    visibility: visible;
+}
+
+
+
+.tooltip:after{
+    content: "";
+    border:10px solid transparent;
+    border-top:10px solid red !important;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 30px;
+    left: -37px;
+}
+
